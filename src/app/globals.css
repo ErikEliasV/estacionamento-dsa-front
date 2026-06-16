@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --bg: #f6f6f4;
+  --surface: #ffffff;
+  --line: #ececec;
+  --ink-strong: #0a0a0a;
+  --ink-soft: #525252;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  min-height: 100dvh;
+  color: var(--ink-strong);
+  font-feature-settings: "cv11", "ss01", "ss03";
+  -webkit-font-smoothing: antialiased;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(10, 10, 10, 0.18);
+  border-radius: 999px;
+}
+
+/* Superfície de asfalto do pátio: textura granulada sutil + leve vinheta. */
+.asphalt-surface {
+  background-color: #1b1d21;
+  background-image:
+    radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.035), transparent 55%),
+    radial-gradient(circle at 80% 90%, rgba(0, 0, 0, 0.35), transparent 60%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+}
+
+/* Carro visto de cima: leve brilho de pintura no teto/capô. */
+.car-paint {
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.22) 0%,
+    rgba(255, 255, 255, 0.06) 18%,
+    rgba(0, 0, 0, 0.12) 82%,
+    rgba(0, 0, 0, 0.28) 100%
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
