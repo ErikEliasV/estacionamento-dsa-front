@@ -108,8 +108,8 @@ export function HeapView({ fila, highlightIndex }: Props) {
                   width={NODE_W}
                   height={NODE_H}
                   rx={4}
-                  fill={hit ? "#0a0a0a" : "#ffffff"}
-                  stroke={hit ? "#0a0a0a" : "#d4d4d4"}
+                  fill={hit ? "#16b06a" : "#ffffff"}
+                  stroke={hit ? "#0e9659" : "#d4d4d4"}
                 />
                 <text
                   x={p.x}
@@ -128,7 +128,7 @@ export function HeapView({ fila, highlightIndex }: Props) {
                   textAnchor="middle"
                   fontSize={8}
                   fontFamily="ui-sans-serif"
-                  fill={hit ? "#d4d4d4" : "#525252"}
+                  fill={hit ? "#d1fadf" : "#525252"}
                 >
                   {item.prioridadeLabel}
                 </text>
@@ -160,13 +160,13 @@ export function HeapView({ fila, highlightIndex }: Props) {
                 key={i}
                 className={[
                   "min-w-[88px] flex-1 px-2 py-1.5 transition-colors",
-                  hit ? "bg-ink-950 text-white" : "bg-white text-ink-900",
+                  hit ? "bg-brand-600 text-white" : "bg-white text-ink-900",
                 ].join(" ")}
               >
                 <div
                   className={[
                     "text-[9px] uppercase tracking-[0.14em]",
-                    hit ? "text-ink-400" : "text-ink-500",
+                    hit ? "text-brand-100" : "text-ink-500",
                   ].join(" ")}
                 >
                   [{i}] · {it.prioridadeLabel}

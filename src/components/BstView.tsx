@@ -111,21 +111,21 @@ export function BstView({ tree, visited = [], highlight }: Props) {
           const isHit = n.numero === highlight;
           const isVisited = visitedSet.has(n.numero) && !isHit;
           const fill = isHit
-            ? "#0a0a0a"
+            ? "#16b06a"
             : isVisited
             ? "#fef3c7"
             : n.ocupada
             ? "#f5f5f5"
             : "#ffffff";
           const stroke = isHit
-            ? "#0a0a0a"
+            ? "#0e9659"
             : isVisited
             ? "#f59e0b"
             : n.ocupada
             ? "#737373"
             : "#d4d4d4";
           const textColor = isHit ? "#ffffff" : "#0a0a0a";
-          const subColor = isHit ? "#a3a3a3" : "#525252";
+          const subColor = isHit ? "#d1fadf" : "#525252";
           return (
             <g key={n.numero}>
               <circle

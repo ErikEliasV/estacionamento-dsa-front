@@ -21,7 +21,19 @@ const config: Config = {
           100: "#f5f5f5",
           50: "#fafafa",
         },
-        // Único acento da página: amarelo de sinalização viária. Locado.
+        // Verde-esmeralda da marca (logo): cor primária de interação.
+        brand: {
+          50: "#eafaf1",
+          100: "#c9f3dd",
+          200: "#97e9bf",
+          300: "#5fd99c",
+          400: "#34c97f",
+          500: "#16b06a",
+          600: "#0e9659",
+          700: "#0b7547",
+          800: "#0a5b38",
+        },
+        // Acento secundário: amarelo de sinalização viária (estado "visitado").
         accent: {
           50: "#fffbeb",
           100: "#fef3c7",

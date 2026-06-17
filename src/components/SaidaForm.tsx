@@ -33,7 +33,7 @@ export function SaidaForm({ onSubmit, loading, vagas = [] }: Props) {
           onChange={(e) => setPlaca(e.target.value.toUpperCase())}
           placeholder="ABC1D23"
           maxLength={8}
-          className="w-full rounded border border-ink-200 bg-white px-3 py-2 font-mono text-sm uppercase tracking-wider text-ink-950 outline-none transition-colors placeholder:text-ink-400 focus:border-ink-950"
+          className="w-full rounded border border-ink-200 bg-white px-3 py-2 font-mono text-sm uppercase tracking-wider text-ink-950 outline-none transition-colors placeholder:text-ink-400 focus:border-brand-500"
         />
       </div>
 

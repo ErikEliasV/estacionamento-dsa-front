@@ -351,7 +351,7 @@ export default function Page() {
               { label: "Livre", swatch: "#ffffff", border: "#d4d4d4" },
               { label: "Ocupada", swatch: "#f5f5f5", border: "#737373" },
               { label: "Visitada", swatch: "#fef3c7", border: "#f59e0b" },
-              { label: "Encontrada", swatch: "#0a0a0a", border: "#0a0a0a" },
+              { label: "Encontrada", swatch: "#16b06a", border: "#0e9659" },
             ]}
           />
         </Panel>
@@ -460,7 +460,7 @@ function ConnectionBadge({ connected }: { connected: boolean | null }) {
   }
   return connected ? (
     <span className="inline-flex items-center gap-1.5 rounded border border-ink-200 bg-white px-2.5 py-1 text-xs text-ink-700">
-      <span className="h-1.5 w-1.5 rounded-full bg-ink-950" /> API ativa
+      <span className="h-1.5 w-1.5 rounded-full bg-brand-500" /> API ativa
     </span>
   ) : (
     <span className="inline-flex items-center gap-1.5 rounded border border-ink-300 bg-ink-50 px-2.5 py-1 text-xs text-ink-700">

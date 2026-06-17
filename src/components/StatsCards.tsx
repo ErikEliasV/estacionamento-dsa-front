@@ -27,6 +27,7 @@ export function StatsCards({ stats }: Props) {
       value: stats?.vagasLivres ?? "-",
       hint: "Disponíveis agora",
       icon: Layers,
+      accent: true,
     },
     {
       label: "Na fila",
@@ -45,13 +46,13 @@ export function StatsCards({ stats }: Props) {
             key={c.label}
             className="bg-white p-5 transition-colors hover:bg-ink-50"
           >
-            <div className="flex items-center gap-2 text-ink-500">
+            <div className={`flex items-center gap-2 ${c.accent ? "text-brand-600" : "text-ink-500"}`}>
               <Icon size={14} strokeWidth={1.75} />
               <span className="text-[11px] font-medium uppercase tracking-[0.14em]">
                 {c.label}
               </span>
             </div>
-            <div className="mt-3 font-display text-3xl font-bold tabular-nums text-ink-950">
+            <div className={`mt-3 font-display text-3xl font-bold tabular-nums ${c.accent ? "text-brand-600" : "text-ink-950"}`}>
               {c.value}
             </div>
             <div className="mt-1 text-xs text-ink-500">{c.hint}</div>

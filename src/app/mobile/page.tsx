@@ -234,7 +234,7 @@ function FormEntrada({
           placeholder="ABC1D23 ou seu nome"
           maxLength={20}
           autoCapitalize="characters"
-          className="w-full rounded border border-ink-200 bg-white px-3 py-3 text-base uppercase tracking-wide text-ink-950 outline-none transition-colors placeholder:text-ink-400 focus:border-ink-950"
+          className="w-full rounded border border-ink-200 bg-white px-3 py-3 text-base uppercase tracking-wide text-ink-950 outline-none transition-colors placeholder:text-ink-400 focus:border-brand-500"
         />
 
         <label className="mb-1.5 mt-5 block text-[11px] font-medium uppercase tracking-[0.14em] text-ink-500">
@@ -251,7 +251,7 @@ function FormEntrada({
                 className={[
                   "rounded border px-3 py-3 text-sm font-medium transition-colors",
                   active
-                    ? "border-ink-950 bg-ink-950 text-white"
+                    ? "border-brand-600 bg-brand-600 text-white"
                     : "border-ink-200 bg-white text-ink-700 active:border-ink-400",
                 ].join(" ")}
               >
@@ -265,7 +265,7 @@ function FormEntrada({
       <button
         type="submit"
         disabled={loading || !entrada.trim()}
-        className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-ink-950 px-4 py-4 text-base font-medium text-white transition-colors active:translate-y-px disabled:cursor-not-allowed disabled:bg-ink-300"
+        className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-brand-600 px-4 py-4 text-base font-medium text-white transition-colors active:translate-y-px disabled:cursor-not-allowed disabled:bg-ink-300"
       >
         {loading ? "Processando..." : "Estacionar"}
       </button>

@@ -37,7 +37,7 @@ export function EntradaForm({ onSubmit, loading }: Props) {
           onChange={(e) => setPlaca(e.target.value.toUpperCase())}
           placeholder="ABC1D23"
           maxLength={8}
-          className="w-full rounded border border-ink-200 bg-white px-3 py-2 font-mono text-sm uppercase tracking-wider text-ink-950 outline-none transition-colors placeholder:text-ink-400 focus:border-ink-950"
+          className="w-full rounded border border-ink-200 bg-white px-3 py-2 font-mono text-sm uppercase tracking-wider text-ink-950 outline-none transition-colors placeholder:text-ink-400 focus:border-brand-500"
         />
       </div>
 
@@ -83,7 +83,7 @@ export function EntradaForm({ onSubmit, loading }: Props) {
                 className={[
                   "rounded border px-2 py-1.5 text-xs font-medium transition-colors",
                   active
-                    ? "border-ink-950 bg-ink-950 text-white"
+                    ? "border-brand-600 bg-brand-600 text-white"
                     : "border-ink-200 bg-white text-ink-700 hover:border-ink-400",
                 ].join(" ")}
               >
@@ -97,7 +97,7 @@ export function EntradaForm({ onSubmit, loading }: Props) {
       <button
         type="submit"
         disabled={loading || !placa.trim()}
-        className="inline-flex w-full items-center justify-center gap-2 rounded bg-ink-950 px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-ink-800 active:translate-y-px disabled:cursor-not-allowed disabled:bg-ink-300"
+        className="inline-flex w-full items-center justify-center gap-2 rounded bg-brand-600 px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-brand-700 active:translate-y-px disabled:cursor-not-allowed disabled:bg-ink-300"
       >
         {loading ? "Processando" : "Registrar entrada"}
         {!loading && <ArrowRight size={14} strokeWidth={2} />}

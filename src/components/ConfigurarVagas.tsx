@@ -44,7 +44,7 @@ export function ConfigurarVagas({ current, onSubmit, loading }: Props) {
               className={[
                 "rounded border px-3 py-1.5 text-xs font-medium tabular-nums transition-colors disabled:opacity-50",
                 active
-                  ? "border-ink-950 bg-ink-950 text-white"
+                  ? "border-brand-600 bg-brand-600 text-white"
                   : "border-ink-200 bg-white text-ink-700 hover:border-ink-400",
               ].join(" ")}
             >
@@ -61,7 +61,7 @@ export function ConfigurarVagas({ current, onSubmit, loading }: Props) {
           max={32}
           value={n}
           onChange={(e) => setN(Number(e.target.value))}
-          className="flex-1 accent-ink-950"
+          className="flex-1 accent-brand-600"
         />
         <span className="w-10 text-right text-sm font-medium tabular-nums text-ink-900">
           {n}
