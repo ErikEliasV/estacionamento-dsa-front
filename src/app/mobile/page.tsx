@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
+import Image from "next/image";
 import { Car, LogOut, Clock, CheckCircle2, AlertCircle } from "lucide-react";
 import { api } from "@/lib/api";
 import { conectarEstado, type ConexaoStatus } from "@/lib/ws";
@@ -104,9 +105,14 @@ export default function MobilePage() {
   return (
     <main className="mx-auto flex min-h-[100dvh] max-w-md flex-col px-5 py-8">
       <header className="flex items-center gap-3">
-        <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-asphalt-900 shadow-lift">
-          <span className="font-display text-lg font-bold text-asphalt-line">P</span>
-        </div>
+        <Image
+          src="/logo-estacionamento.png"
+          alt="Pátio BST"
+          width={44}
+          height={44}
+          priority
+          className="h-11 w-11 rounded-lg shadow-lift"
+        />
         <div className="flex-1">
           <h1 className="font-display text-lg font-bold tracking-tight text-ink-950">
             Pátio BST
