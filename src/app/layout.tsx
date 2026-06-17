@@ -19,6 +19,10 @@ export const metadata: Metadata = {
   title: "Pátio BST · Estacionamento com árvore e heap",
   description:
     "Estacionamento didático com BST e Min-Heap implementados do zero em Java.",
+  icons: {
+    icon: "/logo-estacionamento.png",
+    apple: "/logo-estacionamento.png",
+  },
 };
 
 export default function RootLayout({

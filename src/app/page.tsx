@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import { Binary, Car, GitBranch, RotateCcw, type LucideIcon } from "lucide-react";
 import { api } from "@/lib/api";
 import { conectarEstado } from "@/lib/ws";
@@ -408,11 +409,14 @@ function Header({
   return (
     <header className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
       <div className="flex items-center gap-3">
-        <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-asphalt-900 shadow-lift">
-          <span className="font-display text-lg font-bold text-asphalt-line">
-            P
-          </span>
-        </div>
+        <Image
+          src="/logo-estacionamento.png"
+          alt="Pátio BST"
+          width={44}
+          height={44}
+          priority
+          className="h-11 w-11 rounded-lg shadow-lift"
+        />
         <div>
           <h1 className="font-display text-xl font-bold tracking-tight text-ink-950">
             Pátio BST
